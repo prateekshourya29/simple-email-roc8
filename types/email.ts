@@ -10,3 +10,10 @@ export interface IEmailData {
   subject: string;
   short_description: string;
 }
+
+export interface IEmailBodyData {
+  id: string;
+  body: string;
+}
+
+export type SelectedFilterTypes = "Read" | "UnRead" | "Favorite";
