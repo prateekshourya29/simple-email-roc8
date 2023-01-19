@@ -47,7 +47,7 @@ const EmailListCard: React.FC<IProps> = ({ email }: IProps) => {
     <div
       key={email.id}
       onClick={() => handleOnClick(email)}
-      className={`mb-6 p-2 flex border-2 rounded-lg shadow-xs cursor-pointer ${
+      className={`mb-6 p-2 flex border-2 rounded-lg shadow-xs hover:shadow-md cursor-pointer ${
         email.id === selectedEmail?.id
           ? "border-accent-color"
           : "border-border-color"
