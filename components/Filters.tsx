@@ -25,7 +25,7 @@ const Filters: React.FC = () => {
 
   // Pre-defined style variable to avoid repetition.
   const selectedFilterStyles =
-    "text-text-color border-2 border-border-color bg-filter-button-color";
+    "text-text-color font-semibold border-2 border-border-color bg-filter-button-color";
 
   const handleFilterChange = (key: SelectedFilterTypes | null) => {
     switch (key) {
@@ -81,7 +81,7 @@ const Filters: React.FC = () => {
             ? setSelectedFilter(null)
             : setSelectedFilter("UnRead")
         }
-        className={`mx-1 px-4 pb-1 rounded-full ${
+        className={`ml-1 px-4 pb-1 rounded-full ${
           selectedFilter === "UnRead" && selectedFilterStyles
         }`}
       >
@@ -93,7 +93,7 @@ const Filters: React.FC = () => {
             ? setSelectedFilter(null)
             : setSelectedFilter("Read")
         }
-        className={`mx-1 px-4 pb-1 rounded-full ${
+        className={`ml-1 px-4 pb-1 rounded-full ${
           selectedFilter === "Read" && selectedFilterStyles
         }`}
       >
@@ -105,7 +105,7 @@ const Filters: React.FC = () => {
             ? setSelectedFilter(null)
             : setSelectedFilter("Favorite")
         }
-        className={`mx-1 px-4 pb-1 rounded-full ${
+        className={`ml-1 px-4 pb-1 rounded-full ${
           selectedFilter === "Favorite" && selectedFilterStyles
         }`}
       >
